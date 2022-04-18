@@ -8,7 +8,7 @@ namespace AppsFlyerSDK
     public class AppsFlyerAdRevenue : MonoBehaviour
     {
 
-        public static readonly string kAppsFlyerAdRevenueVersion = "6.5.3";
+        public static readonly string kAppsFlyerAdRevenueVersion = "6.5.4";
 
 #if UNITY_ANDROID && !UNITY_EDITOR
         private static AndroidJavaClass appsFlyerAndroid = new AndroidJavaClass("com.appsflyer.unity.afunityadrevenuegenericplugin.AdRevenueUnityWrapper");
@@ -110,24 +110,22 @@ namespace AppsFlyerSDK
                     return 1;
                 case AppsFlyerAdRevenueMediationNetworkType.AppsFlyerAdRevenueMediationNetworkTypeGoogleAdMob:
                     return 2;
-                case AppsFlyerAdRevenueMediationNetworkType.AppsFlyerAdRevenueMediationNetworkTypeMoPub:
-                    return 3;
                 case AppsFlyerAdRevenueMediationNetworkType.AppsFlyerAdRevenueMediationNetworkTypeFyber:
-                    return 4;
+                    return 3;
                 case AppsFlyerAdRevenueMediationNetworkType.AppsFlyerAdRevenueMediationNetworkTypeAppodeal:
-                    return 5;
+                    return 4;
                 case AppsFlyerAdRevenueMediationNetworkType.AppsFlyerAdRevenueMediationNetworkTypeAdmost:
-                    return 6;
+                    return 5;
                 case AppsFlyerAdRevenueMediationNetworkType.AppsFlyerAdRevenueMediationNetworkTypeTopon:
-                    return 7;
+                    return 6;
                 case AppsFlyerAdRevenueMediationNetworkType.AppsFlyerAdRevenueMediationNetworkTypeTradplus:
-                    return 8;
+                    return 7;
                 case AppsFlyerAdRevenueMediationNetworkType.AppsFlyerAdRevenueMediationNetworkTypeYandex:
-                    return 9;
+                    return 8;
                 case AppsFlyerAdRevenueMediationNetworkType.AppsFlyerAdRevenueMediationNetworkTypeChartBoost:
-                    return 10;
+                    return 9;
                 case AppsFlyerAdRevenueMediationNetworkType.AppsFlyerAdRevenueMediationNetworkTypeUnity:
-                    return 11;
+                    return 10;
                 default:
                     return -1;
             }
@@ -157,17 +155,16 @@ namespace AppsFlyerSDK
     public enum AppsFlyerAdRevenueMediationNetworkType
     {
         AppsFlyerAdRevenueMediationNetworkTypeGoogleAdMob = 1,
-        AppsFlyerAdRevenueMediationNetworkTypeMoPub = 2,
-        AppsFlyerAdRevenueMediationNetworkTypeIronSource = 3,
-        AppsFlyerAdRevenueMediationNetworkTypeApplovinMax = 4,
-        AppsFlyerAdRevenueMediationNetworkTypeFyber = 5,
-        AppsFlyerAdRevenueMediationNetworkTypeAppodeal = 6,
-        AppsFlyerAdRevenueMediationNetworkTypeAdmost = 7,
-        AppsFlyerAdRevenueMediationNetworkTypeTopon = 8,
-        AppsFlyerAdRevenueMediationNetworkTypeTradplus = 9,
-        AppsFlyerAdRevenueMediationNetworkTypeYandex = 10,
-        AppsFlyerAdRevenueMediationNetworkTypeChartBoost = 11,
-        AppsFlyerAdRevenueMediationNetworkTypeUnity = 12
+        AppsFlyerAdRevenueMediationNetworkTypeIronSource = 2,
+        AppsFlyerAdRevenueMediationNetworkTypeApplovinMax = 3,
+        AppsFlyerAdRevenueMediationNetworkTypeFyber = 4,
+        AppsFlyerAdRevenueMediationNetworkTypeAppodeal = 5,
+        AppsFlyerAdRevenueMediationNetworkTypeAdmost = 6,
+        AppsFlyerAdRevenueMediationNetworkTypeTopon = 7,
+        AppsFlyerAdRevenueMediationNetworkTypeTradplus = 8,
+        AppsFlyerAdRevenueMediationNetworkTypeYandex = 9,
+        AppsFlyerAdRevenueMediationNetworkTypeChartBoost = 10,
+        AppsFlyerAdRevenueMediationNetworkTypeUnity = 11
 
     }
 
