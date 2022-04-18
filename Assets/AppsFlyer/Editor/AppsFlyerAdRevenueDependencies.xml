@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <dependencies>
   <androidPackages>
-    <androidPackage spec="com.appsflyer:adrevenue:6.5.3"></androidPackage>
-    <androidPackage spec="com.appsflyer:unity-adrevenue-generic-wrapper:6.5.33"></androidPackage>
-    <androidPackage spec="com.mopub:mopub-sdk:5.18.0"></androidPackage>
+    <androidPackage spec="com.appsflyer:adrevenue:6.5.4"></androidPackage>
+    <androidPackage spec="com.appsflyer:unity-adrevenue-generic-wrapper:6.5.4"></androidPackage>
   </androidPackages>
 
   <iosPods>
-    <iosPod name="AppsFlyer-AdRevenue" version="6.5.3" minTargetSdk="10.0">
+    <iosPod name="AppsFlyer-AdRevenue" version="6.5.4" minTargetSdk="10.0">
     </iosPod>
   </iosPods>
 
