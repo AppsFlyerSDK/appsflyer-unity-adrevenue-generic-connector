@@ -10,15 +10,23 @@ import java.util.HashMap;
 public class AdRevenueUnityWrapper {
 
     /**
-     * Start - currently we only support MoPub
-     * In the future we will support more AppsFlyerAdRevenueWrapperTypes
-     *
+     * start
      * @param application
      */
     public static void start(Application application) {
         AppsFlyerAdRevenue.initialize(new AppsFlyerAdRevenue.Builder(application)
                 .build());
     }
+
+    /**
+     * logAdRevenue
+     *
+     * @param monetizationNetwork
+     * @param mediationNetwork
+     * @param eventRevenueCurrency
+     * @param  eventRevenue
+     * @param  nonMandatory
+     */
     public static void logAdRevenue(String monetizationNetwork,
                                     int mediationNetwork,
                                     String eventRevenueCurrency,
