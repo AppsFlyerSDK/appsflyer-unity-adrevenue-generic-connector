@@ -46,7 +46,7 @@ public class AppsFlyerObjectScript : MonoBehaviour
     dic.Add("custom", "foo");
     dic.Add("custom_2", "bar");
     dic.Add("af_quantity", "1");
-    AppsFlyerAdRevenue.logAdRevenue("facebook", AppsFlyerAdRevenueMediationNetworkType.AppsFlyerAdRevenueMediationNetworkTypeMoPub, 0.026, "USD", dic);
+    AppsFlyerAdRevenue.logAdRevenue("facebook", AppsFlyerAdRevenueMediationNetworkType.AppsFlyerAdRevenueMediationNetworkTypeGoogleAdMob, 0.026, "USD", dic);
 }
 ```
    
