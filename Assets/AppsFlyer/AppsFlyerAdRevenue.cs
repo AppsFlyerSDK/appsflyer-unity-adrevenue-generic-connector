@@ -8,7 +8,7 @@ namespace AppsFlyerSDK
     public class AppsFlyerAdRevenue : MonoBehaviour
     {
 
-        public static readonly string kAppsFlyerAdRevenueVersion = "6.5.4";
+        public static readonly string kAppsFlyerAdRevenueVersion = "6.9.4";
 
 #if UNITY_ANDROID && !UNITY_EDITOR
         private static AndroidJavaClass appsFlyerAndroid = new AndroidJavaClass("com.appsflyer.unity.afunityadrevenuegenericplugin.AdRevenueUnityWrapper");
@@ -126,6 +126,10 @@ namespace AppsFlyerSDK
                     return 9;
                 case AppsFlyerAdRevenueMediationNetworkType.AppsFlyerAdRevenueMediationNetworkTypeUnity:
                     return 10;
+                case AppsFlyerAdRevenueMediationNetworkType.AppsFlyerAdRevenueMediationNetworkTypeCustomMediation:
+                    return 11;
+                case AppsFlyerAdRevenueMediationNetworkType.AppsFlyerAdRevenueMediationNetworkTypedirectMonetization:
+                    return 12;
                 default:
                     return -1;
             }
@@ -164,8 +168,9 @@ namespace AppsFlyerSDK
         AppsFlyerAdRevenueMediationNetworkTypeTradplus = 8,
         AppsFlyerAdRevenueMediationNetworkTypeYandex = 9,
         AppsFlyerAdRevenueMediationNetworkTypeChartBoost = 10,
-        AppsFlyerAdRevenueMediationNetworkTypeUnity = 11
-
+        AppsFlyerAdRevenueMediationNetworkTypeUnity = 11,
+        AppsFlyerAdRevenueMediationNetworkTypeCustomMediation = 12,
+        AppsFlyerAdRevenueMediationNetworkTypedirectMonetization = 13
     }
 
 

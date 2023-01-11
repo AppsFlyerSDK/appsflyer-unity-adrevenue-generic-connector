@@ -15,7 +15,8 @@
 
 ## <a id="installation"> 📲 Installation
    
-   This plugin requires the AppsFlyer Unity plugin version >= 4.22.x.
+   Versions below 6.9.4 require the AppsFlyer Unity plugin version >= 4.22.x.
+   Version 6.9.4 and above requires the AppsFlyer Unity plugin version >= 6.9.4.
 
 
 1. Clone / download this repository.
