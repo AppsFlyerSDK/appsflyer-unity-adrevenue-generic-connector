@@ -4,12 +4,14 @@ echo "Start Build for appsflyer-unity-adrevenue-generic-connector.unitypackage"
 
 DEPLOY_PATH=outputs
 UNITY_PATH="/Applications/Unity/Unity.app/Contents/MacOS/Unity"
-PACKAGE_NAME="appsflyer-unity-adrevenue-generic-connector-6.5.4.unitypackage"
+PACKAGE_NAME="appsflyer-unity-adrevenue-generic-connector-6.9.4.unitypackage"
 mkdir -p $DEPLOY_PATH
 
+echo "move dependency manager to root"
+mv external-dependency-manager-1.2.144.unitypackage ..
 
 # Build the .unitypackage
-/Applications/Unity/Hub/Editor/2019.4.26f1/Unity.app/Contents/MacOS/Unity \
+/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/MacOS/Unity \
 -gvh_disable \
 -batchmode \
 -importPackage external-dependency-manager-1.2.144.unitypackage \
@@ -20,9 +22,11 @@ mkdir -p $DEPLOY_PATH
 Assets \
 $PWD/$DEPLOY_PATH/$PACKAGE_NAME \
 -quit \
-&& echo "package exported successfully to outputs/appsflyer-unity-adrevenue-generic-connector-6.5.4.unitypackage" \
+&& echo "package exported successfully to outputs/appsflyer-unity-adrevenue-generic-connector-6.9.4.unitypackage" \
 || echo "Failed to export package. See create_unity_core.log for more info."
 
+echo "moving dependency manager back to deploy"
+mv ../external-dependency-manager-1.2.144.unitypackage .
 
 if [ "$1" == "-p" ]; then
 echo "removing ./Library"

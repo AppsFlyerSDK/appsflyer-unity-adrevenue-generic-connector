@@ -25,7 +25,7 @@ android {
 repositories { maven { url "https://s3.amazonaws.com/moat-sdk-builds" } }
 
 dependencies {
-    compileOnly 'com.appsflyer:adrevenue:6.5.4'
-}
+    compileOnly 'com.appsflyer:adrevenue:6.9.1'
+}   
 
 apply from: file('publish.gradle')
