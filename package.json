@@ -1,6 +1,6 @@
 {
 	"name": "appsflyer-unity-adrevenue-generic-connector",
-	"displayName": "AppsFlyer",
+	"displayName": "AppsFlyer AdRevenue Connector",
 	"description": "AppsFlyer Unity Adrevenue Generic Connector",
 	"version": "6.9.4",
 	"unity": "2020.3",
