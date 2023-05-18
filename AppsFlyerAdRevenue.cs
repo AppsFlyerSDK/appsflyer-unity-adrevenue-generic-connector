@@ -3,7 +3,7 @@ using UnityEngine;
 using System.Runtime.InteropServices;
 using System;
 
-namespace AppsFlyerSDK
+namespace AppsFlyerAdRevenueConnector
 {
     public class AppsFlyerAdRevenue : MonoBehaviour
     {

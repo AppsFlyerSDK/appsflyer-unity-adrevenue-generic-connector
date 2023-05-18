@@ -1,6 +1,7 @@
 {
-	"name": "AFAdRevenue",
-	"references": [],
+    "name": "AppsFlyerAdRevenue",
+    "rootNamespace": "AppsFlyerAdRevenueConnector",
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
