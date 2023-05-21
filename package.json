@@ -4,8 +4,5 @@
 	"description": "AppsFlyer Unity Adrevenue Generic Connector",
 	"version": "6.9.4",
 	"unity": "2020.3",
-	"license": "MIT",
-	"dependencies": {
-		"appsflyer-unity-plugin": ">=6.9.4"
-	  }
+	"license": "MIT"
   }

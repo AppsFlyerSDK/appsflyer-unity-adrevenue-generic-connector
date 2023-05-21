@@ -1,6 +1,6 @@
 {
     "name": "AppsFlyerAdRevenue",
-    "rootNamespace": "AppsFlyerAdRevenueConnector",
+    "rootNamespace": "AppsFlyerSDK",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
