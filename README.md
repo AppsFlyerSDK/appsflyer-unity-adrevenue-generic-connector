@@ -9,50 +9,7 @@
 
 ## Table of content
 
-- [Installation](#installation)
-- [Initialization](#init-sdk)
-- [API](#api) 
-
-## <a id="installation"> 📲 Installation
-   
-   Versions below 6.9.4 require the AppsFlyer Unity plugin version >= 4.22.x.
-   Version 6.9.4 and above requires the AppsFlyer Unity plugin version >= 6.9.4.
-
-
-1. Clone / download this repository.
-2. [Import](https://docs.unity3d.com/Manual/AssetPackages.html) appsflyer-unity-adrevenue-plugin-x.x.x.unitypackage  into your Unity project.
-    * Go to Assets >> Import Package >> Custom Package
-    * Select appsflyer-unity-adrevenue-plugin-x.x.x.unitypackage.
-
-**Note:** You must have the [AppsFlyer Unity plugin](https://github.com/AppsFlyerSDK/appsflyer-unity-plugin) already in your project. In addition, make sure to init AppsFlyer SDK before AppsFlyerAdRevenue.
-
-## <a id="init-sdk"> 🚀 Initialization
-
-
----
-```c#
-using AppsFlyerSDK;
-
-public class AppsFlyerObjectScript : MonoBehaviour
-{
-  void Start()
-  {
-  	AppsFlyerAdRevenue.start();
-  	/* AppsFlyerAdRevenue.setIsDebug(true); */
-  }
-
-  ....
-
-    Dictionary<string, string> dic = new Dictionary<string, string>();
-    dic.Add("custom", "foo");
-    dic.Add("custom_2", "bar");
-    dic.Add("af_quantity", "1");
-    AppsFlyerAdRevenue.logAdRevenue("facebook", AppsFlyerAdRevenueMediationNetworkType.AppsFlyerAdRevenueMediationNetworkTypeGoogleAdMob, 0.026, "USD", dic);
-}
-```
-   
-
-## <a id="api"> 📑 API
-  Check out the API [here](/docs/api.md).
-
+- [Installation](./docs/ad_revenue_unity_connector.md#install-the-connector)
+- [Initialization](./docs/ad_revenue_unity_connector.md#initialize-the-connector)
+- [API](./docs/ad_revenue_unity_connector.md#ad-revenue-connector-api) 
 
