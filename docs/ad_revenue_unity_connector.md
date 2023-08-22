@@ -21,15 +21,13 @@ The ad revenue SDK connector sends impression revenue data to the AppsFlyer SDK.
 **Prerequisite:** Before installing the connector [update your SDK](https://dev.appsflyer.com/hc/docs/sdk-installation) and the [AppsFlyer Unity plugin](https://dev.appsflyer.com/hc/docs/installation) to their latest versions. 
 
 1. Clone or download [the Ad revenue connector](https://github.com/AppsFlyerSDK/appsflyer-unity-adrevenue-generic-connector/tree/main) repository.
-2. [Import](https://docs.unity3d.com/Manual/AssetPackages.html) the Adrevenue Unity package into your Unity project (To learn how to import to Unity refer to the [Unity documentation](https://docs.unity3d.com/Manual/AssetPackages.html)).
+2. Import the Adrevenue Unity package into your Unity project (To learn how to import to Unity refer to the [Unity documentation](https://docs.unity3d.com/Manual/AssetPackages.html)).
     1. In Unity, go to **Assets** > **Import Package** > **Custom Package**
     2. From the repository root select the  `appsflyer-unity-adrevenue-plugin-x.x.x.unitypackage` file.
 
 ## Initialize the connector
 
 Make sure to initialize the AppsFlyer SDK before initializing the connector. 
-
----
 
 ```java
 using AppsFlyerSDK;
@@ -55,9 +53,8 @@ public class AppsFlyerObjectScript : MonoBehaviour
 
 ## Ad revenue connector API
 
-### start
+### `start`
 
----
 
 `public static void start()`
 
@@ -73,11 +70,8 @@ using AppsFlyerSDK;
   }
 ```
 
----
+### `setIsDebug`
 
-### setIsDebug
-
----
 
  `public static void setIsDebug(bool isDebug)`
 
@@ -96,11 +90,9 @@ Set to true to view debug logs. (development only!)
 **Note:** This API will only set the debug logs for iOS. For Android the debug logs are controlled by the native SDK.
 To turn on the debug logs on Android call `AppsFlyer.setIsDebug(true);`
 
----
 
-### logAdRevenue
+### `logAdRevenue`
 
----
 
 `public static void logAdRevenue(string monetizationNetwork, AppsFlyerAdRevenueMediationNetworkType mediationNetwork, double eventRevenue, string revenueCurrency, Dictionary<string, string> additionalParameters)`
 
