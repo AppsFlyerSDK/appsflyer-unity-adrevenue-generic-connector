@@ -103,7 +103,6 @@ Send ad revenue data from the impression payload to AppsFlyer regardless of the 
 | monetizationNetwork | string | monetization network |
 | mediationNetwork | AppsFlyerAdRevenueMediationNetworkType | Enum for mediaton network type |
 | eventRevenue | string | event revenue |
-| monetizationNetwork | double | event revenue |
 | revenueCurrency | string | revenue currency |
 | additionalParameters | Dictionary<string, string> | Any custom additional parameters |
 |  |  |  |
