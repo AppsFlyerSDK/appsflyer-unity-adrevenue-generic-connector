@@ -20,10 +20,22 @@ The ad revenue SDK connector sends impression revenue data to the AppsFlyer SDK.
 
 **Prerequisite:** Before installing the connector [update your SDK](https://dev.appsflyer.com/hc/docs/sdk-installation) and the [AppsFlyer Unity plugin](https://dev.appsflyer.com/hc/docs/installation) to their latest versions. 
 
+## Using Unity Package
+
 1. Clone or download [the Ad revenue connector](https://github.com/AppsFlyerSDK/appsflyer-unity-adrevenue-generic-connector/tree/main) repository.
 2. Import the Adrevenue Unity package into your Unity project (To learn how to import to Unity refer to the [Unity documentation](https://docs.unity3d.com/Manual/AssetPackages.html)).
     1. In Unity, go to **Assets** > **Import Package** > **Custom Package**
     2. From the repository root select the  `appsflyer-unity-adrevenue-plugin-x.x.x.unitypackage` file.
+
+## Using Unity Package Manager
+
+1. Add the dependency in your `manifest.json` file:
+```
+ "appsflyer-unity-adrevenue-generic-connector": "https://github.com/AppsFlyerSDK/appsflyer-unity-adrevenue-generic-connector.git#upm"
+```
+2. If you haven't already done so, download the [External Dependency Manager for Unity](https://github.com/googlesamples/unity-jar-resolver) to be able to resolve our Android / iOS dependencies.
+
+**Note:** To choose a specific version and not the latest, you can replace the `upm` with the specific version tag, `v6.9.4-upm` for example.
 
 ## Initialize the connector
 
