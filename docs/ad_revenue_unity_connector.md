@@ -125,7 +125,8 @@ additionalParams.Add("custom", "foo");
 additionalParams.Add("custom_2", "bar");
 additionalParams.Add("af_quantity", "1");
 AppsFlyerAdRevenue.logAdRevenue("facebook",
-                                AppsFlyerAdRevenueMediationNetworkType.AppsFlyerAdRevenueMediationNetworkTypeGoogleAdMob,                                   0.026,
+                                AppsFlyerAdRevenueMediationNetworkType.AppsFlyerAdRevenueMediationNetworkTypeGoogleAdMob,                                   
+                                0.026,
                                 "USD",
-                                dic);
+                                additionalParams);
 ```
