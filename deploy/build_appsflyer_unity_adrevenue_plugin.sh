@@ -4,17 +4,17 @@ echo "Start Build for appsflyer-unity-adrevenue-generic-connector.unitypackage"
 
 DEPLOY_PATH=outputs
 UNITY_PATH="/Applications/Unity/Unity.app/Contents/MacOS/Unity"
-PACKAGE_NAME="appsflyer-unity-adrevenue-generic-connector-6.9.4.unitypackage"
+PACKAGE_NAME="appsflyer-unity-adrevenue-generic-connector-6.9.41.unitypackage"
 mkdir -p $DEPLOY_PATH
 
 echo "move dependency manager to root"
-mv external-dependency-manager-1.2.144.unitypackage ..
+mv external-dependency-manager-1.2.177.unitypackage ..
 
 # Build the .unitypackage
 /Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/MacOS/Unity \
 -gvh_disable \
 -batchmode \
--importPackage external-dependency-manager-1.2.144.unitypackage \
+-importPackage external-dependency-manager-1.2.177.unitypackage \
 -nographics \
 -logFile create_unity_core.log \
 -projectPath $PWD/../ \
@@ -22,11 +22,11 @@ mv external-dependency-manager-1.2.144.unitypackage ..
 Assets \
 $PWD/$DEPLOY_PATH/$PACKAGE_NAME \
 -quit \
-&& echo "package exported successfully to outputs/appsflyer-unity-adrevenue-generic-connector-6.9.4.unitypackage" \
+&& echo "package exported successfully to outputs/appsflyer-unity-adrevenue-generic-connector-6.9.41.unitypackage" \
 || echo "Failed to export package. See create_unity_core.log for more info."
 
 echo "moving dependency manager back to deploy"
-mv ../external-dependency-manager-1.2.144.unitypackage .
+mv ../external-dependency-manager-1.2.177.unitypackage .
 
 if [ "$1" == "-p" ]; then
 echo "removing ./Library"
@@ -43,6 +43,11 @@ echo "Moving  $DEPLOY_PATH/$PACKAGE_NAME to root"
 mv ./outputs/$PACKAGE_NAME ..
 echo "removing ./deploy/outputs"
 rm -rf ./outputs
+echo "removing ./Assets extra files"
+rm -rf ../Assets/ExternalDependencyManager
+rm -rf ../Assets/PlayServicesResolver
+rm ../Assets/ExternalDependencyManager.meta
+rm ../Assets/PlayServicesResolver.meta
 else
 echo "dev mode. No files removed. Run with -p flag for production build."
 fi
