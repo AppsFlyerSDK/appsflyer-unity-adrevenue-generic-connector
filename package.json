@@ -2,7 +2,7 @@
 	"name": "appsflyer-unity-adrevenue-generic-connector",
 	"displayName": "AppsFlyer AdRevenue Connector",
 	"description": "AppsFlyer Unity Adrevenue Generic Connector",
-	"version": "6.9.4",
+	"version": "6.9.42",
 	"unity": "2020.3",
 	"dependencies": {
 		"appsflyer-unity-plugin": "6.9.4"
