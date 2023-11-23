@@ -7,7 +7,6 @@
 
 #import <Foundation/Foundation.h>
 
-#import "AFUnityUtils.h"
 #if __has_include(<AppsFlyerAdRevenue/AppsFlyerAdRevenue.h>)
 #import <AppsFlyerAdRevenue/AppsFlyerAdRevenue.h>
 #endif
