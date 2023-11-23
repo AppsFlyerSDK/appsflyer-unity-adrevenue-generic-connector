@@ -1,3 +1,6 @@
+### 6.9.42
+- Fix ios undefined symbols error
+
 ### 6.9.41
 - Fix wrong AFUnityUtils import
 - Add reference to the main AF SDK for asmdef file in upm branches
