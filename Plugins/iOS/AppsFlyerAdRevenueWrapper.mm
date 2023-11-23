@@ -13,7 +13,20 @@
 
 extern "C" {
     
-    
+    NSString* stringFromChar(const char *str) {
+        return str ? [NSString stringWithUTF8String:str] : nil;
+    }
+
+    NSDictionary* dictionaryFromJson(const char *jsonString) {
+        if(jsonString){
+            NSData *jsonData = [[NSData alloc] initWithBytes:jsonString length:strlen(jsonString)];
+            NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:nil];
+            return dictionary;
+        }
+        return nil;
+    }
+
+
     const void _start(int length, int* adRevenueTypes){
         [AppsFlyerAdRevenue start];
     }
