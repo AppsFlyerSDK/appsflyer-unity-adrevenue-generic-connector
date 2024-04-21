@@ -8,13 +8,17 @@ hidden: false
 
 ## Overview
 
-**Ad revenue reporting options**
+### Ad revenue reporting options
 
 Ad revenue is reported to AppsFlyer by either aggregate granularity (via API) or impression-level granularity (via SDK). Impression-level data via SDK has better data freshness and earlier availability in AppsFlyer.
 
-**SDK principles of operation**
+### SDK principles of operation
 
 The ad revenue SDK connector sends impression revenue data to the AppsFlyer SDK. An ad revenue event, `af_ad_revenue`, is generated and sent to the platform. These impression events are collected and processed in AppsFlyer, and the revenue is attributed to the original UA source.
+
+> 📘 **Note**
+>
+> The marketer also needs to configure the integration for each mediation partner in AppsFlyer, either impression-level (via SDK) or impression-level (via SDK) with device-level (via S2S API). [Learn more](https://support.appsflyer.com/hc/en-us/articles/217490046#connect-to-ad-revenue-integrated-partners)
 
 ## Install the connector
 
@@ -76,7 +80,6 @@ using AppsFlyerSDK;
 
 ### `setIsDebug`
 
-
  `public static void setIsDebug(bool isDebug)`
 
 Set to true to view debug logs. (development only!)
@@ -94,9 +97,7 @@ Set to true to view debug logs. (development only!)
 **Note:** This API will only set the debug logs for iOS. For Android the debug logs are controlled by the native SDK.
 To turn on the debug logs on Android call `AppsFlyer.setIsDebug(true);`
 
-
 ### `logAdRevenue`
-
 
 `public static void logAdRevenue(string monetizationNetwork, AppsFlyerAdRevenueMediationNetworkType mediationNetwork, double eventRevenue, string revenueCurrency, Dictionary<string, string> additionalParameters)`
 
