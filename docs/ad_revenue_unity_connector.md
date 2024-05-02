@@ -120,7 +120,6 @@ additionalParams.Add(AFAdRevenueEvent.COUNTRY, "US");
 additionalParams.Add(AFAdRevenueEvent.AD_UNIT, "89b8c0159a50ebd1");
 additionalParams.Add(AFAdRevenueEvent.AD_TYPE, "Banner");
 additionalParams.Add(AFAdRevenueEvent.PLACEMENT, "place");
-additionalParams.Add(AFAdRevenueEvent.ECPM_PAYLOAD, "encrypt");
 
 additionalParams.Add("custom", "foo");
 additionalParams.Add("custom_2", "bar");
