@@ -1,3 +1,6 @@
+### 6.14.3
+- Updated native iOS connector version to 6.14.3
+
 ### 6.9.42
 - Fix ios undefined symbols error
 
