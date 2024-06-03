@@ -1,3 +1,0 @@
-rootProject.name = "af-unity-adrevenue-generic-android"
-include ':app'
-include ':afunityadrevenuegenericplugin'

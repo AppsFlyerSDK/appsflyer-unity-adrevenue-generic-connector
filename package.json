@@ -1,0 +1,11 @@
+{
+	"name": "appsflyer-unity-adrevenue-generic-connector",
+	"displayName": "AppsFlyer AdRevenue Connector",
+	"description": "AppsFlyer Unity Adrevenue Generic Connector",
+	"version": "6.14.3",
+	"unity": "2019.4",
+	"dependencies": {
+		"appsflyer-unity-plugin": "6.14.3"
+	},
+	"license": "MIT"
+  }
